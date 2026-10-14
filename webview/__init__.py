@@ -129,6 +129,7 @@ settings = ImmutableDict(
         'JS_API_MAX_DEPTH': 10,
         'SHOW_DEFAULT_MENUS': True,
         'WEBVIEW2_RUNTIME_PATH': None,
+        'POPUP_ALLOWED_DOMAINS':[]
     }
 )
 
