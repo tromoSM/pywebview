@@ -257,6 +257,7 @@ class EdgeChrome:
         uri=str(args.get_Uri())
         allowedlist=webview_settings['POPUP_ALLOWED_DOMAINS'] or []
         if not any(allowed in uri for allowed in allowedlist):
+            logger.debug(f'External window "{uri}" ignored. uri not in allowed domains (POPUP_ALLOWED_DOMAINS)')
             pass
         else:
             if webview_settings['OPEN_EXTERNAL_LINKS_IN_BROWSER']:
